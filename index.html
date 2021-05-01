@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="compiler/bootstrap.css" >
+    
+
+    <!-- FontAwensome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    
+    <!--sass --watch node_modules/bootstrap/scss:compiler-->
+
+    <title>SEOX</title>
+  </head>
+  <body>  
+    <!--------------------------HEADER--------------------------->
+
+    <div class="header">
+      <div class="container col-md-12">
+        <div class="row header__left col-md-3" >
+          <a class="header__a navbar-brand" href="#">
+            <i class="header__menu fas fa-bars"></i>
+            <img class="header__logo" src="img/logo.svg" width="71" height="30" alt="logo">
+          </a>
+        </div>
+
+        <div class="row header__centro col-md-4">          
+          <div class="col-lg-4">
+            <div class="input-group  header__search">
+              <input type="text" class="form-control header__input" placeholder="O que você procura hoje?">
+              <span class="input-group-btn header__span">
+                <button class="btn btn-default header__search__submit" type="button"><i class="fas fa-search"></i></button>                
+              </span>
+            </div>
+            
+          </div>
+        </div>
+        
+          <div class="row header__comprar col-md-2 ">
+            <p>Comprar</p>          
+               
+          </div> 
+        
+
+        <div class="row header__right col-md-3">          
+          <div class="header__right-bag ">
+            <img src="img/bag.svg" ></img>  
+          </div>
+          <img src="img/individual.svg" alt="usuario">
+          <p>Olá Jaqueline</p>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <!--------------------------Main--------------------------->
+    
+    
+    <main class="main">
+      <div class="container ">
+        <div class="main__bloco1">
+          <div class="main__user">
+
+            <img class="" src="img/usuario.svg" >
+            <img class="camera" src="img/camera.svg" width="20" height="20">
+            <p class="main__txt__user">
+              Jaqueline de Oliveira
+            </p>
+          </div>
+
+          <div class="main__funcoes">
+            <img  src="img/orders.svg" width="17" height="16">
+            <p class="main__dados">Meus pedidos</p>
+          </div>
+
+          <div class="main__funcoes">
+            <img  src="img/individual.svg" width="17" height="16">
+            <p class="main__dados">Meus dados</p>
+          </div>
+
+          <div class="main__funcoes">
+            <img  src="img/address.svg" width="17" height="16">
+            <p class="main__dados">Enderços</p>
+          </div>
+
+          <div class="main__funcoes">
+            <img  src="img/medidas.svg" width="17" height="16">
+            <p class="main__dados">Minhas medidas</p>
+          </div>
+
+          <div class="main__funcoes">
+            <img  src="img/cadeado.svg" width="17" height="16">
+            <p class="main__dados">Minha conta</p>
+          </div>
+
+          <div class="main__funcoes exit">
+            <img  src="img/sair.svg" width="17" height="16">
+            <p class="main__dados">sair</p>
+          </div>
+        </div>
+        
+        <div class="main__bloco2">
+          <p class="main__titulo-pedido">Meus pedidos</p>
+          <!--------------------------Pedidos entregues--------------------------->
+          <div class="main__bloco2__table col-md-12">
+            <table aria-colcount="9" class="table main__bloco2__table1 ">
+              <tr role="row" class="list_row main__list_row-caminho">
+                <td aria-colindex="list_row" class="main__list__row col-md-1">
+                  <div class="main__list__sales1">
+                    <img src="img/check.svg" class="">
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class="main__list_row2 main__list__row col-md-4">
+                  <div class="main__list__sales2">
+                    <img src="img/orders.svg" class="">
+                    <label class="main__number__pedido">#17048</label> <br>
+                    <label class="main__pedido">Pedido entregue</label>
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class=" main__list_row3 main__list__row col-md-4">
+                  <div class="main__list__sales4">
+                    <img src="img/ball.svg" class="">
+                  </div>
+
+                  <div class="main__list__sales5">
+                    <p class="main__list__price">R$ 980,00<br>
+                      2 itens</p>
+                   </div>
+                </td>
+                
+                <td aria-colindex="list_row" class="main__list_row4 main__list_row4-entregue main__list__row col-md-3">
+                  <div class="main__list__sales6">
+                    <button class="btn btn-primary main__detalhes" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                      Mais detalhes <img src="img/down.svg">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            <div class="collapse main__apresentacao" id="collapseExample1">
+              <div class="card main__card card-body ">
+                <div class="main__grid1">
+                  <img src="img/truck.svg" width="33" height="20">
+                </div>
+                <div class="main__grid2">
+                  <label class="main__number__pedido22">Frete:</label> <br>
+                  <label class="main__pedido__price  main__pedido2">R$ 36,10 </label>
+                  <span class="main__sedex">via SEDEX</span>
+
+                </div>
+                <div class="main__grid3">
+                  <label class="main__number__pedido22">Forma de pagamento:</label> <br>
+                  <label class="main__pedido2 main__pedido3">Cartão de crédito</label>
+
+                </div>
+                <div class="main__grid4">
+                  <label class="main__number__pedido22">Entregue dia:</label> <br>
+                  <label class="main__pedido2 main__pedido4">09/fev</label>
+
+                </div>
+
+                <div class="main__grid5">
+                  <img src="img/sun.svg">
+                </div>
+              </div>
+              
+              <div class="main__timeline">
+                <div class="main__timeline-timeline">
+                  <div class="main__timeline-progresso">
+                    <div class="main__progresso-bar" style="width: 100%;"></div>
+                  </div>
+                  <div class="main__timeline-events">
+                    <div class="main__timeline-events-event">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>03/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>03/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>03/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>03/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event main__evento">
+                      <img src="img/check.svg" class="">
+                      <div class="main__timeline-truncate main__timeline-truncate2">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>03/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+              
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos vcvcvc">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto ">
+                    <img src="img/star.svg">
+                   <span class="main__avaliacao-span">Avalie o produto</span>  
+                  </div>
+                </div>
+
+              </div>
+
+              <hr>
+
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos vcvcvc">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor:Preto</span> 
+                    <span class="main__produto-variacao">tamanho: P</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto ">
+                    <img src="img/star.svg">
+                    <span class="main__avaliacao-span">Avalie o produto</span>  
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <!--------------------------Pedido a caminho--------------------------->
+          <div class="main__bloco2__table col-md-12">
+            <table aria-colcount="9" class="table main__bloco2__table1 ">
+              <tr role="row" class="list_row main__list_row-caminho">
+                <td aria-colindex="list_row" class="main__list__row col-md-1">
+                  <div class="main__list__sales1 main__list-caminho">
+                    <img src="img/truck2.svg" >
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class="main__list_row2 main__list__row col-md-4">
+                  <div class="main__list__sales2">
+                    <img src="img/orders.svg" class="">
+                    <label class="main__number__pedido">#15324</label> <br>
+                    <label class="main__pedido main__pedido-caminho">Seu pedido está a caminho</label>
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class=" main__list_row3 main__list__row col-md-4">
+                  <div class="main__list__sales4" style="width: 55px;">
+                    <img src="img/oneball.svg" >
+                  </div>
+
+                  <div class="main__list__sales5">
+                    <p class="main__list__price">R$ 70,00<br>
+                      1 item</p>
+                   </div>
+                </td>
+                
+                <td aria-colindex="list_row" class="main__list_row4 main__list_row4-caminho main__list__row col-md-3">
+                  <div class="main__list__sales6">
+                    <button class="btn btn-primary main__detalhes" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                      Mais detalhes <img src="img/down.svg">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            <div class="collapse main__apresentacao" id="collapseExample2">
+              <div class="card main__card card-body ">
+                <div class="main__grid1">
+                  <img src="img/truck.svg" width="33" height="20">
+                </div>
+                <div class="main__grid2">
+                  <label class="main__number__pedido22">Frete:</label> <br>
+                  <label class="main__pedido__price  main__pedido2">R$ 36,10 </label>
+                  <span class="main__sedex">via SEDEX</span>
+
+                </div>
+                <div class="main__grid3">
+                  <label class="main__number__pedido22">Forma de pagamento:</label> <br>
+                  <label class="main__pedido2 main__pedido3">Cartão de crédito</label>
+
+                </div>
+                <div class="main__grid4">
+                  <button class="main__grid4-button-codigo">
+                    <img src="img/codigo.svg" >OD828132785BR
+                  </button>
+                </div>
+
+                <div class="main__grid5">
+                  <img src="img/sun.svg">
+                </div>
+              </div>
+              
+              <div class="main__timeline main__timeline-caminho">
+                <div class="main__timeline-timeline main__timeline-timeline-caminho">
+                  <div class="main__timeline-progresso main__timeline-progresso-caminho">
+                    <div class="main__progresso-bar" style="width: 100%;"></div>
+                  </div>
+                  <div class="main__timeline-events main__timeline-events-caminho">
+                    <div class="main__timeline-events-event main__timeline-events-event-caminho">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-caminho">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>02/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event main__timeline-events-event-caminho">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-caminho">
+                        <div class="main__timeline-item">
+                          Pagamento<br> Aprovado<br>
+                          <span class="main__timeline-item-desde">
+                            <span>03/fev</span>
+                            14:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event main__timeline-events-event-caminho">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-caminho">
+                        <div class="main__timeline-item">
+                          Em<br> Separação<br>
+                          <span class="main__timeline-item-desde">
+                            <span>04/fev</span>
+                            16:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="main__timeline-events-event main__evento main__evento-caminho">
+                      <img src="img/truck2.svg" class="">
+                      <div class="main__timeline-truncate main__timeline-truncate2">
+                        <div class="main__timeline-item">
+                          Em<br> Transporte<br>
+                          <span class="main__timeline-item-desde">
+                            <span>05/fev</span>
+                            17:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="main__timeline-events-event main__timeline-events-event-caminho">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-caminho">
+                        <div class="main__timeline-item">
+                          Pedido<br> Entregue<br>                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>   
+              
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos vcvcvc">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------------Pedido em separação--------------------------->
+          <div class="main__bloco2__table col-md-12">
+            <table aria-colcount="9" class="table main__bloco2__table1 ">
+              <tr role="row" class="list_row main__list_row-caminho">
+                <td aria-colindex="list_row" class="main__list__row col-md-1">
+                  <div class="main__list__sales1 main__list-separacao">
+                    <img src="img/separacao.svg" >
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class="main__list_row2 main__list__row col-md-4">
+                  <div class="main__list__sales2">
+                    <img src="img/orders.svg">
+                    <label class="main__number__pedido">#16432</label> <br>
+                    <label class="main__pedido main__pedido-separacao">Seu pedido está em separação</label>
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class=" main__list_row3 main__list__row col-md-4">
+                  <div class="main__list__sales4" style="width: 55px;">
+                    <img src="img/oneball.svg" >
+                  </div>
+
+                  <div class="main__list__sales5">
+                    <p class="main__list__price">R$ 70,00<br>
+                      1 item</p>
+                   </div>
+                </td>
+                
+                <td aria-colindex="list_row" class="main__list_row4 main__list_row4-separacao main__list__row col-md-3">
+                  <div class="main__list__sales6">
+                    <button class="btn btn-primary main__detalhes" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                      Mais detalhes <img src="img/down.svg">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            <div class="collapse main__apresentacao" id="collapseExample3">
+              <div class="card main__card card-body ">
+                <div class="main__grid1">
+                  <img src="img/truck.svg" width="33" height="20">
+                </div>
+                <div class="main__grid2">
+                  <label class="main__number__pedido22">Frete:</label> <br>
+                  <label class="main__pedido__price  main__pedido2">R$ 36,10 </label>
+                  <span class="main__sedex">via SEDEX</span>
+
+                </div>
+                <div class="main__grid3">
+                  <label class="main__number__pedido22">Forma de pagamento:</label> <br>
+                  <label class="main__pedido2 main__pedido3">Cartão de crédito</label>
+
+                </div>
+                <div class="main__grid4">
+                  <label class="main__number__pedido22">Chegará dia:</label> <br>
+                  <label class="main__pedido2 main__pedido4 main__separacao-pedido">09/fev</label>
+                </div>
+
+                <div class="main__grid5">
+                  <img src="img/sun.svg">
+                </div>
+              </div>
+              
+              <div class="main__timeline main__timeline-separacao">
+                <div class="main__timeline-timeline main__timeline-timeline-separacao">
+                  <div class="main__timeline-progresso main__timeline-progresso-separacao">
+                    <div class="main__progresso-bar" style="width: 100%;"></div>
+                  </div>
+                  <div class="main__timeline-events main__timeline-events-separacao">
+                    <div class="main__timeline-events-event main__timeline-events-event-separacao">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-separacaoo">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>02/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event main__timeline-events-event-separacao">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-separacao">
+                        <div class="main__timeline-item">
+                          Pagamento<br> Aprovado<br>
+                          <span class="main__timeline-item-desde">
+                            <span>03/fev</span>
+                            14:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event  main__evento main__timeline-events-event-separacao">
+                      <img src="img/separacao.svg" >
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-separacao main__timeline-truncate2">
+                        <div class="main__timeline-item">
+                          Em<br> Separação<br>
+                          <span class="main__timeline-item-desde">
+                            <span>04/fev</span>
+                            16:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="main__timeline-events-event main__evento-separacao">
+                      
+                      <div class="main__timeline-truncate ">
+                        <div class="main__timeline-item">
+                          Em<br> Transporte
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="main__timeline-events-event main__timeline-events-event-separacao">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-separacao">
+                        <div class="main__timeline-item">
+                          Pedido<br> Entregue<br>                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>   
+              
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div><hr>
+
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--------------------------Pedido aprovado--------------------------->
+          <div class="main__bloco2__table col-md-12">
+            <table aria-colcount="9" class="table main__bloco2__table1 ">
+              <tr role="row" class="list_row main__list_row-caminho">
+                <td aria-colindex="list_row" class="main__list__row col-md-1">
+                  <div class="main__list__sales1 main__list-aprovado">
+                    <img src="img/aprovado.svg" >
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class="main__list_row2 main__list__row col-md-4">
+                  <div class="main__list__sales2">
+                    <img src="img/orders.svg">
+                    <label class="main__number__pedido">#36597</label> <br>
+                    <label class="main__pedido main__pedido-aprovado">Seu pedido foi aprovado</label>
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class=" main__list_row3 main__list__row col-md-4">
+                  <div class="main__list__sales4" style="width: 55px;">
+                    <img src="img/ball.svg" >
+                  </div>
+
+                  <div class="main__list__sales5">
+                    <p class="main__list__price">R$ 1250,00<br>
+                      2 itens</p>
+                   </div>
+                </td>
+                
+                <td aria-colindex="list_row" class="main__list_row4  main__list_row4-aprovado main__list__row col-md-3">
+                  <div class="main__list__sales6">
+                    <button class="btn btn-primary main__detalhes" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                      Mais detalhes <img src="img/down.svg">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            <div class="collapse main__apresentacao" id="collapseExample4">
+              <div class="card main__card card-body ">
+                <div class="main__grid1">
+                  <img src="img/truck.svg" width="33" height="20">
+                </div>
+                <div class="main__grid2">
+                  <label class="main__number__pedido22">Frete:</label> <br>
+                  <label class="main__pedido__price  main__pedido2">R$ 36,10 </label>
+                  <span class="main__sedex">via SEDEX</span>
+
+                </div>
+                <div class="main__grid3">
+                  <label class="main__number__pedido22">Forma de pagamento:</label> <br>
+                  <label class="main__pedido2 main__pedido3">Cartão de crédito</label>
+
+                </div>
+                <div class="main__grid4">
+                  <label class="main__number__pedido22">Chegará dia:</label> <br>
+                  <label class="main__pedido2 main__pedido4 main__aprovado-pedido">09/fev</label>
+                </div>
+
+                <div class="main__grid5">
+                  <img src="img/sun.svg">
+                </div>
+              </div>
+              
+              <div class="main__timeline main__timeline-aprovado">
+                <div class="main__timeline-timeline main__timeline-timeline-aprovado">
+                  <div class="main__timeline-progresso main__timeline-progresso-aprovado">
+                    <div class="main__progresso-bar" style="width: 100%;"></div>
+                  </div>
+                  <div class="main__timeline-events main__timeline-events-aprovado">
+                    <div class="main__timeline-events-event main__timeline-events-event-aprovado">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-aprovado">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>02/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event main__evento main__timeline-events-event-aprovado">
+                      <img src="img/aprovado.svg" >
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-aprovado main__timeline-truncate2">
+                        <div class="main__timeline-item">
+                          Pagamento<br> Aprovado<br>
+                          <span class="main__timeline-item-desde">
+                            <span>03/fev</span>
+                            14:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event  main__timeline-events-event-aprovado">
+                      
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-separacao">
+                        <div class="main__timeline-item">
+                          Em<br> Separação
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="main__timeline-events-event main__evento-aprovado main__timeline-events-event-aprovado">
+                      
+                      <div class="main__timeline-truncate ">
+                        <div class="main__timeline-item">
+                          Em<br> Transporte
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="main__timeline-events-event main__timeline-events-event-aprovado">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-aprovado">
+                        <div class="main__timeline-item">
+                          Pedido<br> Entregue<br>                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>   
+              
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div><hr>
+
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--------------------------Pedido recebido--------------------------->
+          <div class="main__bloco2__table col-md-12">
+            <table aria-colcount="9" class="table main__bloco2__table1 ">
+              <tr role="row" class="list_row main__list_row-caminho">
+                <td aria-colindex="list_row" class="main__list__row col-md-1">
+                  <div class="main__list__sales1 main__list-recebido">
+                    <img src="img/recebido.svg" >
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class="main__list_row2 main__list__row col-md-4">
+                  <div class="main__list__sales2">
+                    <img src="img/orders.svg">
+                    <label class="main__number__pedido"> #64528</label> <br>
+                    <label class="main__pedido main__pedido-recebido">Seu pedido foi recebido</label>
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class=" main__list_row3 main__list__row col-md-4">
+                  <div class="main__list__sales4" style="width: 55px;">
+                    <img src="img/duplaball.svg" >
+                  </div>
+
+                  <div class="main__list__sales5">
+                    <p class="main__list__price">R$ 800,00<br>
+                      3 itens</p>
+                   </div>
+                </td>
+                
+                <td aria-colindex="list_row" class="main__list_row4 main__list_row4-recebido main__list__row col-md-3">
+                  <div class="main__list__sales6">
+                    <button class="btn btn-primary main__detalhes" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                      Mais detalhes <img src="img/down.svg">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            <div class="collapse main__apresentacao" id="collapseExample5">
+              <div class="card main__card card-body ">
+                <div class="main__grid1">
+                  <img src="img/truck.svg" width="33" height="20">
+                </div>
+                <div class="main__grid2">
+                  <label class="main__number__pedido22">Frete:</label> <br>
+                  <label class="main__pedido__price  main__pedido2">R$ 36,10 </label>
+                  <span class="main__sedex">via SEDEX</span>
+
+                </div>
+                <div class="main__grid3">
+                  <label class="main__number__pedido22">Forma de pagamento:</label> <br>
+                  <label class="main__pedido2 main__pedido3">Cartão de crédito</label>
+
+                </div>
+                <div class="main__grid4">
+                  <label class="main__number__pedido22">Chegará dia:</label> <br>
+                  <label class="main__pedido2 main__pedido4 main__recebido-pedido">09/fev</label>
+                </div>
+
+                <div class="main__grid5">
+                  <img src="img/sun.svg">
+                </div>
+              </div>
+              
+              <div class="main__timeline main__timeline-recebido">
+                <div class="main__timeline-timeline main__timeline-timeline-recebido">
+                  <div class="main__timeline-progresso main__timeline-progresso-recebido">
+                    <div class="main__progresso-bar" style="width: 100%;"></div>
+                  </div>
+                  <div class="main__timeline-events main__timeline-events-recebido">
+                    <div class="main__timeline-events-event main__timeline-events-event__recebido main__timeline-events-event-recebido">
+                      <img src="img/aprovado.svg" >
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-recebido main__timeline-truncate2">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>02/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event   main__timeline-events-event-recebido">
+                      
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-recebido ">
+                        <div class="main__timeline-item">
+                          Pagamento<br> Aprovado
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event  main__timeline-events-event-recebido">
+                      
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-recebido">
+                        <div class="main__timeline-item">
+                          Em<br> Separação
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="main__timeline-events-event main__evento-recebido main__timeline-events-event-recebido">
+                      
+                      <div class="main__timeline-truncate ">
+                        <div class="main__timeline-item">
+                          Em<br> Transporte
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="main__timeline-events-event main__timeline-events-event-recebido">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-recebido">
+                        <div class="main__timeline-item">
+                          Pedido<br> Entregue<br>                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>   
+              
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div><hr>
+
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div><hr>
+
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--------------------------Pedido reprovado--------------------------->
+          <div class="main__bloco2__table col-md-12">
+            <table aria-colcount="9" class="table main__bloco2__table1 ">
+              <tr role="row" class="list_row main__list_row-caminho">
+                <td aria-colindex="list_row" class="main__list__row col-md-1">
+                  <div class="main__list__sales1 main__list-reprovado">
+                    <img src="img/reprovado.svg" >
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class="main__list_row2 main__list__row col-md-4">
+                  <div class="main__list__sales2">
+                    <img src="img/orders.svg">
+                    <label class="main__number__pedido"> #64528</label> <br>
+                    <label class="main__pedido main__pedido-reprovado">Seu pedido foi cancelado</label>
+                  </div>
+                </td>
+
+                <td aria-colindex="list_row" class=" main__list_row3 main__list__row col-md-4">
+                  <div class="main__list__sales4" style="width: 55px;">
+                    <img src="img/duplaball.svg" >
+                  </div>
+
+                  <div class="main__list__sales5">
+                    <p class="main__list__price">R$ 1600,00<br>
+                      3 itens</p>
+                   </div>
+                </td>
+                
+                <td aria-colindex="list_row" class="main__list_row4 main__list_row4-cancelado main__list__row col-md-3">
+                  <div class="main__list__sales6">
+                    <button class="btn btn-primary main__detalhes" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+                      Mais detalhes <img src="img/down.svg">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            <div class="collapse main__apresentacao" id="collapseExample6">
+              <!--<div class="card main__card card-body ">
+                --<div class="main__grid1">
+                  <img src="img/truck.svg" width="33" height="20">
+                </div>
+                <div class="main__grid2">
+                  <label class="main__number__pedido22">Frete:</label> <br>
+                  <label class="main__pedido__price  main__pedido2">R$ 36,10 </label>
+                  <span class="main__sedex">via SEDEX</span>
+
+                </div>
+                <div class="main__grid3">
+                  <label class="main__number__pedido22">Forma de pagamento:</label> <br>
+                  <label class="main__pedido2 main__pedido3">Cartão de crédito</label>
+
+                </div>
+                <div class="main__grid4">
+                  <label class="main__number__pedido22">Chegaria dia:</label> <br>
+                  <label class="main__pedido2 main__pedido4 main__recebido-pedido">09/fev</label>
+                </div>
+
+                <div class="main__grid5">
+                  <img src="img/sun.svg">
+                </div>
+              </div>-->
+              
+              <!--<div class="main__timeline main__timeline-recebido">
+                <div class="main__timeline-timeline main__timeline-timeline-recebido">
+                  <div class="main__timeline-progresso main__timeline-progresso-recebido">
+                    <div class="main__progresso-bar" style="width: 100%;"></div>
+                  </div>
+                  <div class="main__timeline-events main__timeline-events-recebido">
+                    <div class="main__timeline-events-event teste92 main__timeline-events-event-recebido">
+                      <img src="img/aprovado.svg" >
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-recebido main__timeline-truncate2">
+                        <div class="main__timeline-item">
+                          Pedido<br> Recebido<br>
+                          <span class="main__timeline-item-desde">
+                            <span>02/fev</span>
+                            18:48
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event   main__timeline-events-event-recebido">
+                      
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-recebido ">
+                        <div class="main__timeline-item">
+                          Pagamento<br> Aprovado
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__timeline-events-event  main__timeline-events-event-recebido">
+                      
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-recebido">
+                        <div class="main__timeline-item">
+                          Em<br> Separação
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="main__timeline-events-event main__evento-recebido main__timeline-events-event-recebido">
+                      
+                      <div class="main__timeline-truncate ">
+                        <div class="main__timeline-item">
+                          Em<br> Transporte
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="main__timeline-events-event main__timeline-events-event-recebido">
+                      <div class="fill"></div>
+                      <div class="main__timeline-truncate main__timeline-truncate-recebido">
+                        <div class="main__timeline-item">
+                          Pedido<br> Entregue<br>                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>-->   
+              
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div><hr>
+
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div><hr>
+
+              <div class="main__orders  col-md-12 col-lg-12">
+                <div class="main__orders-produtos col-md-9">
+                  <img src="img/produto.svg">
+                  <div class="main__produtos ">
+                    <label class="main__produto__nome ">Elastique</label> <br>
+                    <label class="main__produto__price">R$ 540,00 </label><br>
+                    <span class="main__produto-txt">01 unidade</span>
+                    <span class="main__produto-variacao">Cor: Neutro Rosado</span> 
+                    <span class="main__produto-variacao">tamanho: M</span> 
+                  </div>
+                </div> 
+
+                <div class="main__avaliacao col-md-3">
+                  <div class="main__avaliacao-produto-caminho ">
+                    
+                   <span class="main__avaliacao-span-caminho">Ver produto</span>  
+                   <img src="img/olho.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <!--------------------------Footer--------------------------->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__pagamento col-md-12 col-lg-12">
+          <div class="col-md-6 footer__pagamento-cart">
+            <h6>Formas de pagamento</h6>
+            <img src="img/carts.svg">
+          </div>
+          <div class="col-md-6 footer__pagamento-seguranca quarenta">
+            <img src="img/site.svg" alt="">
+            <img src="img/reclame.svg" alt="">
+            <img src="img/seguro.svg" alt="">
+          </div>
+        </div>        
+        <div class="footer__txt col-md-12 col-lg-12">
+          <p>Preços e condições de pagamento exclusivos para compras via Internet. Vendas sujeitas à analise e confirmação de dados. Fica garantida a empresa a eventual retificação das ofertas e erros de digitação que possam ter sido veiculados, podendo ser estornado a compra. 77.941.490/0225-58 - Gazin Industria e Comercio De Móveis e Eletrodomesticos LTDA - ROD PR 082 SN - Centro - CEP: 87485000 -</p>
+        </div>
+      </div>
+
+    </footer>
+    
+    
+    
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+  </body>
+</html>
